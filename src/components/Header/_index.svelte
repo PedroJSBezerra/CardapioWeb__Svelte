@@ -15,19 +15,19 @@
   let links = [
     {
       name: "Início",
-      url: "/#"
+      url: "#/"
     },
     {
       name: "Cardápio",
-      url: "/#"
+      url: "#/cardapio"
     },
     {
       name: "Horários",
-      url: "/#"
+      url: "#/"
     },
     {
       name: "Quem Somos",
-      url: "/#"
+      url: "#/"
     },
   ]
 </script>
