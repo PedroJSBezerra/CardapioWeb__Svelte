@@ -1,16 +1,15 @@
 <script>
-  import Home from '../../routes/Home.svelte'
-  import Cardapio from '../../routes/Cardapio.svelte'
   import Router from 'svelte-spa-router'
-
-  const routes = {
-    // Exact path 
-    '/': Home,
-    '/cardapio': Cardapio,
-  }
+  import {routes} from '../../routes/_index'
 </script>
+
 
 <main>
   <Router {routes}/>
-  
 </main>
+
+<style lang="scss">
+  main {
+    min-height: 100vh;
+  }
+</style>

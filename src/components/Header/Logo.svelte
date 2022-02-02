@@ -1,12 +1,10 @@
 <script>
-	export let logoSrc
-	let imgSrc 
-	imgSrc = logoSrc
+	let imgSrc = ''
 
 </script>
 
 <div class="logo">
-  <a href="/#" class="logo-link">
+  <a href="#/" class="logo-link">
 		{#if imgSrc}
     	<img src="{imgSrc}" alt="" class="logo-link__img">
 		{:else}

@@ -10,6 +10,7 @@
 </div>
 
 <style lang="scss">
+  @import '../../styles/colors.scss';
   $dimension: 50px;
 
   .button {
@@ -24,7 +25,7 @@
     justify-content: center;
     
     span {
-      background: #333;
+      background: $text-white;
       border-radius: 2px;
       display: block;
       height: 3px;
@@ -44,6 +45,14 @@
 
   .button--open {
     @extend .button;
+    position: fixed;
+    transition: all 0.4s ease;
+    right: .62rem;
+
+    &:hover {
+      background: $button-hover-black;
+      border-radius: 50%;
+    }
 
     span:nth-child(1) {
       transform: rotateZ(45deg);

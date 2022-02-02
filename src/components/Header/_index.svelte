@@ -6,46 +6,28 @@
 
   let open = false
   
+  let header
+
+  console.log(header)
+
   let toggle = () => {
     open = !open
   }
-
-  let logoSrc = ''
-
-  let links = [
-    {
-      name: "Início",
-      url: "#/"
-    },
-    {
-      name: "Cardápio",
-      url: "#/cardapio"
-    },
-    {
-      name: "Horários",
-      url: "#/"
-    },
-    {
-      name: "Quem Somos",
-      url: "#/"
-    },
-  ]
+  
 </script>
 
-<header class="header">
-  <Logo {logoSrc}/>
+<header class="header" bind:this={header}>
   <Nav>
+    <Logo />
     <MenuButton {open} {toggle}/>
-    <Menu {toggle} {open} {links}/>
+    <Menu {toggle} {open}/>
   </Nav>
 </header>
 
-<style>
+<style lang="scss">
+  @import '../../styles/colors.scss';
+
   header {
-    display: flex;
-    padding: 1rem .62rem;
-    justify-content: space-between;
-    align-items: center;
-    background: #ddd;
+    background: $primary;
   }
 </style>
